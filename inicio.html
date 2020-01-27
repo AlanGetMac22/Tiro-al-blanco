@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="uft-8">
-    <title>Inicio | Tiro al blanco </title>
+    <title id="title"></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
     <script>
@@ -15,11 +15,11 @@
 <body>
     <nav>
         <ul>
-            <li><a href="acerca.html">Acerca de</a></li>
-            <li><a href="bolsa.html">Bolsa de trabajos</a></li>
-            <li><a href="postulaciones.html">Postulaciones</a></li>
-            <li><a href="contrataciones.html">Contrataciones</a></li>
-            <li><a href="formulario.html">Iniciar sesion</a></li>
+            <li><<a href="acerca.html" id="acercade"></a></li>
+            <li><a href="bolsa.html" id="bolsadetrabajos"></a></li>
+            <li><a href="postulaciones.html" id="postulaciones"></a></li>
+            <li><a href="contrataciones.html" id="contrataciones"></a></li>
+            <li><a href="formulario.html" id="iniciarsesion"></a></li>
         </ul>
         <div class="contenedor">
             <h1 id="header"></h1>
@@ -40,10 +40,23 @@
     </header>
 
     <script>
+        /* Contenido principal Tab */
+        
+        document.getElementById("title").innerHTML = "Inicio | Tiro al blanco";
         document.getElementById("header").innerHTML = "¡Bienvenido a Tiro al blanco!";
-        document.getElementById("parrafo1").innerHTML = "¡El sitio ideal para la búsqueda y obtención de trabajo en línea!";
-        document.getElementById("parrafo2").innerHTML = "Aquí encontraras vacantes y puestos disponibles en las 3 bolsas de trabajo que tenemos para ti";
-        document.getElementById("parrafo3").innerHTML = "Registra tus datos y comienza hoy mismo a buscar ¡el blanco perfecto!";
+        document.getElementById("parrafo1").innerHTML = "¡El sitio ideal para la búsqueda y obtención de trabajo en línea!.";
+        document.getElementById("parrafo2").innerHTML = "Aquí encontraras vacantes y puestos disponibles en las 3 bolsas de trabajo que tenemos para ti.";
+        document.getElementById("parrafo3").innerHTML = "Registra tus datos y comienza hoy mismo a buscar , ¡El blanco perfecto!.
+
+";
+        
+        /* Enlaces */
+        
+        document.getElementById("acercade").innerHTML = "Acerca de";
+        document.getElementById("bolsadetrabajos").innerHTML = "Bolsa de trabajos";
+        document.getElementById("postulaciones").innerHTML = "Postulaciones";
+        document.getElementById("contrataciones").innerHTML = "Contrataciones";
+        document.getElementById("iniciarsesion").innerHTML = "Iniciar sesión";
     </script>
 </body>
 
