@@ -1,81 +1,87 @@
+/* Cuerpo de página web */
+
 body {
-    margin: 30px;
-    background: azure;
+    margin: 0px;
+    padding: 0px;
     font-family: sans-serif;
     box-sizing: border-box;
 }
 
 
-/* Diseño de barra de navegación */
+/* Header */
 
-header img {
-    margin: -35px;
+.header {
+    background: url("Empresa/yeah.jpeg");
+    padding: 85px;
+    color: white;
+    text-align: center;
 }
 
-nav {
-    margin: -35px;
-    background-image: url('Empresa/home.jpeg');
-    background-size: cover;
-    padding: -240px;
-    height: 635px;
-}
 
-ul {
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: translate(650px) translateY (-20px);
-}
-
-ul li {
-    padding: 0 45px;
-    list-style: none;
-    background: transparent;
-    float: left;
-    height: 60px;
-}
-
-ul li a {
-    color: gray;
-    text-decoration: none;
-    padding: 10px;
-}
-
-ul li a:hover {
-    color: azure;
-    position: relative;
-    padding: 15px;
-    background: orangered;
-    border-radius: 40px;
-}
+/* Contenedor de página */
 
 .contenedor {
+    color: azure;
+    font-size: 20px;
     text-align: center;
-    font-size: 25px;
-    padding-top: 360px;
+}
+
+.contenedor1 {
     color: gray;
-    font-family: sans-serif;
+    font-size: 22px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.active {
+    background-color: red;
+}
+
+
+/* Navegación web Enlaces */
+
+ul {
+    background-color: #4CAF50;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+    border-radius: 40px;
 }
 
 
 /* Diseño de barra de búsqueda centro */
 
 .search-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-height: 40px;
-    transform: translate(-50%, -50%);
     background: transparent;
     border-radius: 40px;
+    left: 50%;
+    max-height: 40px;
     padding: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
 }
 
 .search-box:hover>.search-txt {
+    padding: 0 5px;
     width: 250px;
-    padding: 0 6px;
 }
 
 .search-box:hover>.search-btn {
@@ -83,36 +89,195 @@ ul li a:hover {
 }
 
 .search-txt {
-    border: none;
     background: none;
-    outline: none;
-    float: left;
-    padding: 1;
-    color: black;
-    font-size: 18px;
-    transition: 0.4s;
+    border: none;
+    color: azure;
     line-height: 50px;
+    float: left;
+    font-size: 18px;
+    padding: 1px;
+    transition: 0.4s;
+    outline: none;
     width: 0px;
 }
 
 .search-btn {
-    color: orange;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: orangered;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background: orangered;
+    border-radius: 50%;
+    color: orange;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    float: right;
     transition: 0.4s;
+    width: 40px;
+}
+
+
+/* Barra de navegación */
+
+.topmenu {
+    background-color: #4CAF50;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topmenu li {
+    float: left;
+}
+
+.topmenu li a {
+    color: white;
+    display: inline-block;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topmenu li a:hover {
+    background-color: orangered;
+    border-radius: 20px;
+}
+
+.topmenu li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+.sidemenu {
+    width: 15%;
+}
+
+.content {
+    width: 100%;
+}
+
+.sidemenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidemenu li a {
+    background-color: #eee;
+    color: #666;
+    display: block;
+    margin-bottom: 4px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.sidemenu li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.sidemenu li a.active {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+/* Navegación del sitio */
+
+form {
+    padding: 0 200px;
+    text-align: center;
+}
+
+section {
+    border: 2px solid transparent;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+
+table {
+    padding: 0 190px;
+}
+
+caption {
+    color: black;
+    height: 30pt;
+    font-weight: bold;
+}
+
+th {
+    background: transparent;
+    color: black;
+    text-align: center;
+}
+
+.td {
+    border: 2px solid black;
+    color: black;
+    font-size: small;
+    padding: 40px;
+    text-align: justify;
+    vertical-align: middle;
+    width: 40px;
+    margin-top: 40px;
+}
+
+.row {
+    background: transparent;
+    margin: 30px;
+}
+
+.etiqueta1 {
+    text-align: center;
+}
+
+
+/* Formulario de contacto */
+
+textarea {
+    border: 2px solid gray;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 800px;
+}
+
+.row {
+    height: auto !important;
+    vertical-align: top;
+}
+
+
+/* Diseño de tabla de vacantes */
+
+.div {
+    border: 3px solid red;
+    height: 225px;
+    margin-top: 15px;
+    padding-top: 20px;
+    width: 770px;
+}
+
+.div2 {
+    border: 2px solid yellow;
+    width: 120px;
+    height: 100px;
+}
+
+#overflowTest {
+    color: black;
+    background: white;
+    border: 2px solid blue;
+    height: 250px;
+    margin: 150px;
+    padding: 0 150px 0;
+    overflow: scroll;
+    width: 55%;
 }
 
 
 /* Pie de página */
 
 footer p {
-    text-align: center;
     border: 2px solid black;
     color: black;
+    text-align: center;
 }

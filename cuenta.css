@@ -1,0 +1,86 @@
+/* Cuerpo de página web */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/* Barra de navegaciòn */
+
+ul {
+    background-color: #4CAF50;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+    border-radius: 20px;
+}
+
+.active {
+    background-color: red;
+}
+
+
+/* Lista de datos */
+
+table {
+    margin: 30px;
+}
+
+form {
+    display: block;
+    margin: 30px;
+    text-align: center;
+}
+
+.div {
+    margin: 0 555px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.text-danger {
+    color: red;
+}
+
+b {
+    margin-top: 25px;
+}
+
+input {
+    border: 2px solid palegreen;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 8px;
+    width: 200px;
+}
+
+.button {
+    background: palegreen;
+    color: gray;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+}

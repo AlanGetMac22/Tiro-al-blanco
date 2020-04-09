@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- Español -->
+<html lang="es">
+<!-- Cabecera de página -->
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AlanGetMac22">
+    <meta name="description" content="Agencia de trabajos en línea">
+    <meta name="keywords" content="Tab, Tiro al blanco, ¡El blanco perfecto!">
+    <!-- Título de la página -->
+    <title id="title"></title>
+    <!-- Estilos CSS3 -->
+    <link rel="stylesheet" href="bolsa.css">
+    <!-- Dirección de icono -->
+    <script defer src="http://fontawesome.com/icons/react?style=brands"></script>
+</head>
+<!-- Estructura de página -->
+
+<body>
+    <!-- Enlaces de navegación -->
+    <nav>
+        <ul>
+            <li>
+                <a href="acerca.html" id="a1"></a>
+                <!-- Acerca de nosotros -->
+            </li>
+            <li>
+                <a href="bolsa.html" id="a2"></a>
+                <!-- Bolsa de trabajos -->
+            </li>
+            <li>
+                <a href="postulaciones.html" id="a3"></a>
+                <!-- Postulaciónes -->
+            </li>
+            <li>
+                <a href="contrataciones.html" id="a4"></a>
+                <!-- Contrataciónes -->
+            </li>
+            <li>
+                <a href="iniciarsesion1.php" id="a5"></a>
+                <!-- Formulario -->
+            </li>
+        </ul>
+        <!-- Titulo y parrafos principales -->
+        <div class="contenedor">
+            <h1 id="h1"></h1>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+        </div>
+    </nav>
+    <!-- Selector de búsqueda -->
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Puesto solicitado">
+        <input class="search-txt" type="text" name="" placeholder="Ciudad o Estado">
+        <a class="search-btn" href="trabajos.html">
+            <i class="fab fa-react"></i>
+        </a>
+    </div>
+    <!-- Imagen principal Tiro al blanco -->
+    <header>
+        <a href="principal.html"><img src="Empresa/tab2.jpg" alt="Tiro al blanco"></a>
+    </header>
+    <br>
+    <!-- Mycanvas -->
+    <canvas id="myCanvas" width="800" height="100" style="border:2px solid violet;"></canvas>
+
+    <!-- Primera tabla -->
+    <!-- Bolsa de trabajos -->
+    <!-- Empresas -->
+    <section>
+        <table class="table">
+            <caption>
+                Bolsa de trabajos
+            </caption>
+            <caption>
+                Empresas
+            </caption>
+            <th class="row">
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+                </tr>
+                <th class="row">
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                    <td>Dato 5</td>
+                    <td>Dato 6</td>
+                    </tr>
+                    <th class="row">
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </th>
+        </table>
+        <br>
+        </br>
+        <hr>
+        <br>
+        <!-- Segunda tabla -->
+        <!-- Bolsa de trabajos -->
+        <!-- Negocios -->
+        <table class="table">
+            <caption>
+                Negocios
+            </caption>
+            <th class="row">
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+                </tr>
+                <th class="row">
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                    <td>Dato 5</td>
+                    <td>Dato 6</td>
+                    </tr>
+                    <th class="row">
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </th>
+        </table>
+    </section>
+    <br>
+    <hr>
+    <!-- Aviso  -->
+    <h1 class="etiqueta1">*Inicia sesión para ver trabajos disponibles cerca de ti</h1>
+    <br>
+    <textarea id="textarea"></textarea>
+    <input type="submit" value="Enviar">
+    <footer>
+        <p id="footer"></p>
+    </footer>
+    <script>
+        var s = "Título";
+
+        var tab = document.getElementById("title").innerHTML = "Bolsa de trabajos | Tiro al blanco";
+
+        console.log("Bolsa de trabajos");
+
+        var x = 100;
+        var y = 50;
+        var z = x + y;
+
+        console.log("Mis variables");
+
+        var s = "Enlaces de navegación";
+
+        var acerca = document.getElementById("a1").innerHTML = "Acerca de";
+        var bolsa = document.getElementById("a2").innerHTML = "Bolsas en línea";
+        var postulaciones = document.getElementById("a3").innerHTML = "Postulaciónes";
+        var contrataciones = document.getElementById("a4").innerHTML = "Contrataciónes";
+        var inicio = document.getElementById("a5").innerHTML = "Iniciar sesión";
+
+        console.log("Hypervinculos");
+
+        var s = "Contenido principal";
+
+        var tab = document.getElementById("h1").innerHTML = "¡Bienvenido a Tiro al blanco!";
+        document.getElementById("p1").innerHTML = "¡El sitio ideal para la búsqueda y obtención de trabajo en línea!";
+        document.getElementById("p2").innerHTML = "Aquí encontrarás vacantes y puestos disponibles en las 3 bolsas de trabajo que tenemos para tí.";
+        document.getElementById("p3").innerHTML = "Regístra tus datos y comienza hoy mismo a buscar en el sitio , ¡El blanco perfecto!.";
+
+        console.log("Contenido principal");
+
+        var s = "Sección de comentarios";
+
+        var comentarios = document.getElementById("textarea").innerHTML = "Nos interesa tus comentarios (0)";
+
+        console.log("Sección de comentarios");
+
+        var s = "Pie de página";
+
+        document.getElementById("footer").innerHTML = "Derechos reservados.";
+
+        console.log("Derechos reservados");
+
+        var s = "Mycanvas";
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        console.log("Mycanvas");
+    </script>
+</body>
+
+</html>

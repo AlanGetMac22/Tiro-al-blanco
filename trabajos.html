@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- Español -->
+<html lang="es">
+<!-- Cabecera de página -->
+<!-- head -->
+
+<head>
+    <meta charset="uft-8">
+    <title id="title"></title>
+    <!-- Título de página -->
+    <meta name="author" content="AlanGetMac22">
+    <meta name="description" content="Agencia de trabajos en línea">
+    <meta name="keywords" content="Tab, Tiro al blanco, ¡El blanco perfecto!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS3 -->
+    <!-- Estilos y fuentes en cascada -->
+    <style>
+        /* Cuerpo de página web */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        /* Navegación web Enlaces */
+        
+        ul {
+            background-color: #4CAF50;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            color: white;
+            display: inline-block;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: red;
+            border-radius: 20px;
+        }
+        /* Enlace activo */
+        
+        .active {
+            background-color: red;
+        }
+        /* OverFlowTrest */
+        
+        #overflowTest {
+            color: black;
+            background: white;
+            border: 2px solid blue;
+            height: 150px;
+            margin: 120px;
+            padding: 5px;
+            overflow: scroll;
+            width: 80%;
+        }
+    </style>
+    <!-- Javascript -->
+    <!-- Funciones y variables de filtros -->
+    <script>
+        function getOption() {
+            var obj = document.getElementById("Salario ");
+            document.getElementById("demo ").innerHTML =
+                obj.options[obj.selectedIndex].text;
+        } {
+            var obj = document.getElementById("Puesto ");
+            document.getElementById("demo ").innerHTML =
+                obj.options[obj.selectedIndex].text;
+        } {
+            var obj = document.getElementById("Ciudad ");
+            document.getElementById("demo ").innerHTML =
+                obj.options[obj.selectedIndex].text;
+        } {
+            var obj = document.getElementById("Disponibilidad ");
+            document.getElementById("demo ").innerHTML =
+                obj.options[obj.selectedIndex].text;
+        }
+        console.log("Filtros de busqueda");
+    </script>
+    <!-- head -->
+</head>
+<!-- head -->
+<!-- Cuerpo y estructura de página -->
+
+<body>
+    <!-- Hyperenlaces -->
+    <ul>
+        <li>
+            <a href="inicio.html" id="a1"></a>
+            <!-- Página principal -->
+        </li>
+        <li>
+            <a href="cuenta.html" id="a2"></a>
+            <!-- Perfil de cuenta -->
+        </li>
+        <li>
+            <a href="trabajos.html" class="active" id="a3"></a>
+            <!-- Bolsa se trabajos -->
+        </li>
+        <li>
+            <a href="postulacion.html" id="a4"></a>
+            <!-- Postulaciónes -->
+        </li>
+        <li>
+            <a href="contratacion.html" id="a5"></a>
+            <!-- Contrataciónes -->
+        </li>
+    </ul>
+    <!-- Imagen principal Tiro al blanco -->
+    <a href="inicio.html"><img src="Empresa/tab2.jpg" alt="Tiro al blanco"></a><br>
+    <!-- My canvas -->
+    <canvas id="myCanvas" width="800" height="100" style="border:2px solid violet;"></canvas>
+    <!-- Filtros de búsqueda -->
+    <form>
+        Salario
+        <select id="Salario">
+             <option>$1500</option>
+             <option>$2000</option>
+             <option>$2500</option>
+             <option>$3000</option>
+             <option>$3500</option>
+             <option>$4000</option>
+             <option>$4500</option>
+            </select> Puesto deseado
+        <select id="Puesto">
+             <option>Vendedor</option>
+             <option>Almacenista</option>
+             <option>Promotor</option>
+             <option>Atención al cliente</option>
+             <option>Operador</option>
+             <option>Supervisor</option>
+             <option>Gerente</option>
+                </select> Ciudad/Estado
+        <select id="Ciudad">
+             <option>CDMX</option>
+             <option>Guadalajara</option>
+             <option>Monterrey</option>
+             <option>Puebla</option>
+             <option>Toluca</option>
+             <option>Tijuana</option>
+             <option>León</option>
+                    </select> Disponibilidad
+        <select id="Disponibilidad">
+             <option>06:00-09:00</option>
+             <option>09:00-12:00</option>
+             <option>12:00-03:00</option>
+             <option>03:00-06:00</option>
+             <option>06:00-09:00</option>
+             <option>09:00-00:00</option>
+             <option>Lunes a Sabado</option>
+         </select>
+        <!-- Botón de filtrar -->
+        <input type="button" onclick="getOption()" value="Filtrar">
+        <p id="demo"></p>
+    </form>
+    <!-- Filtros de búsqueda -->
+
+    <!--  -->
+    <!-- Titulo  -->
+    <h1 id="h1"></h1>
+    <h2 id="h2"></h2>
+    <!-- Vacantes y puestos -->
+    <div id="overflowTest">
+        <img src="Empresa/tab2.jpg" alt="Tiro al blanco">
+        <h3 id="e1"></h3>
+        <p id="p1"></p>
+    </div>
+    <div id="overflowTest">
+        <img src="Empresa/tab2.jpg" alt="Tiro al blanco">
+        <h3 id="e2"></h3>
+        <p id="p2"></p>
+    </div>
+    <div id="overflowTest">
+        <img src="Empresa/tab2.jpg" alt="Tiro al blanco">
+        <h3 id="e3"></h3>
+        <p id="p3"></p>
+    </div>
+    <div id="overflowTest">
+        <img src="Empresa/tab2.jpg" alt="Tiro al blanco">
+        <h3 id="e4"></h3>
+        <p id="p4"></p>
+    </div>
+
+    <!-- Javascript y Bootstrap -->
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">Anterior</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">Siguiente</a></li>
+    </ul>
+    <!-- Javascript -->
+    <script>
+        var s = "Titulo de la página";
+
+        var tab = document.getElementById("title").innerHTML = "Bolsa de trabajos | Tab";
+
+        console.log("Bolsa de trabajos");
+
+        var a = 1000;
+        var b = 500;
+        var c = a + b;
+
+        var x = 100;
+        var y = 50;
+        var z = x + y;
+
+        console.log("Mis variables");
+
+        var s = "Hyperenlaces";
+
+        var principal = document.getElementById("a1").innerHTML = "Pagina principal";
+        var perfil = document.getElementById("a2").innerHTML = "Perfil de cuenta";
+        var bolsa = document.getElementById("a3").innerHTML = "Bolsa de trabajos";
+        var postulaciones = document.getElementById("a4").innerHTML = "Postulaciones";
+        var contrataciones = document.getElementById("a5").innerHTML = "Contrataciones";
+
+        console.log("Hyperenlaces")
+
+        var s = "Titulo";
+
+        document.getElementById("h1").innerHTML = "Puestos de trabajo y empleo:";
+        document.getElementById("h2").innerHTML = "Empresas y Negocios";
+
+        console.log("Puestos y empresas");
+
+        var s = "Vacantes y puestos disponibles";
+
+        document.getElementById("e1").innerHTML = "Puesto disponible";
+        document.getElementById("e2").innerHTML = "Puesto disponible";
+        document.getElementById("e3").innerHTML = "Puesto disponible";
+        document.getElementById("e4").innerHTML = "Puesto disponible";
+        document.getElementById("p1").innerHTML = "This text is really long and the height of its container is only This text is really long and the height of its container is only";
+        document.getElementById("p2").innerHTML = "This text is really long and the height of its container is only This text is really long and the height of its container is only";
+        document.getElementById("p3").innerHTML = "This text is really long and the height of its container is only This text is really long and the height of its container is only";
+        document.getElementById("p4").innerHTML = "This text is really long and the height of its container is only This text is really long and the height of its container is only";
+
+        console.log("Vacantes y puestos");
+
+        var s = "Mycanvas";
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        console.log("Mycanvas");
+    </script>
+
+    <!-- Final de body -->
+
+</body>
+<!-- Término de documento -->
+
+</html>

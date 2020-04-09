@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- Español -->
+<html lang="es">
+<!-- Cabecera de página -->
+<!-- head -->
+
+<head>
+    <meta charset="uft-8">
+    <title id="title"></title>
+    <!-- Título de página -->
+    <meta name="author" content="AlanGetMac22">
+    <meta name="description" content="Agencia de trabajos en línea">
+    <meta name="keywords" content="Tab, Tiro al blanco, ¡El blanco perfecto!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Javascript -->
+    <script>
+        var s = "Titulo de la página";
+
+        var tab = document.getElementById("title").innerHTML = "Formulario | Tiro al blanco";
+
+        console.log("Formulario de datos");
+
+        var a = 1000;
+        var b = 500;
+        var c = a + b;
+
+        var x = 100;
+        var y = 50;
+        var z = x + y;
+
+        console.log("Mis variables");
+
+        function valida_informacion() {
+            formulario = document.getElementById("registro").hover;
+            var datetime = document.getElementsById("datetime").hover;
+            var username = document.getElementById("username").hover;
+            var email = document.getElementById("email").hover;
+            var password = document.getElementById("password").hover;
+            var tel = document.getElementById("tel").hover;
+            var fdn = document.getElementById("fdn").hover;
+            var hm = document.getElementById("hm").hover;
+            var name = document.getElementsById("name").hover;
+            var lastname = document.getElementsById("lastname").hover;
+            var finame = document.getElementsById("finame").hover;
+            var place = document.getElementsById("place").hover;
+            var age = document.getElementsByid("age").hover;
+            var address = document.getElementsById("address").hover;
+            var suburb = document.getElementsById("suburb").hover;
+            var code = document.getElementsById("code").hover;
+            var citystate = document.getElementsById("citystate").hover;
+            var national = document.getElementsById("national").hover;
+            var curp = document.getElementsById("curp").hover;
+            var rfc = document.getElementsById("rfc").hover;
+            var nss = document.getElementsById("nss").hover;
+            var cartilla = document.getElementsById("cartilla").hover;
+            var driving = document.getElementsById("driving").hover;
+            var passport = document.getElementById("passport").hover;
+
+            formulario.setAttribute("method", "post");
+            formulario.setAttribute("action", "postulacion.html");
+            formulario.submit(onclick = "bottom");
+        }
+
+        console.log("Validación de formulario");
+    </script>
+    <!-- CSS3 -->
+    <!-- Estilos y fuentes en cascada -->
+    <style>
+        /* Cuerpo de documento */
+        
+        body {
+            background: azure;
+            border: 5px solid red;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium';
+            margin: 30px;
+        }
+        /* Header */
+        
+        header {
+            margin: 30px;
+            text-align: center;
+        }
+        /* Datos del usuario */
+        /* Tabla */
+        
+        table {
+            margin: 30px;
+        }
+        /* Formulario */
+        
+        form {
+            display: block;
+            text-align: center;
+        }
+        /* * */
+        
+        .text-danger {
+            color: red;
+        }
+        /* Texto */
+        
+        b {
+            margin-top: 25px;
+        }
+        /* Relleno */
+        
+        input {
+            border: 2px solid palegreen;
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 8px;
+            width: 200px;
+        }
+        /* Botón */
+        
+        .bottom {
+            border: 2px solid green;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 10px;
+            width: 200px;
+            color: gray;
+        }
+        
+        .bottom:hover {
+            background: palegreen;
+        }
+        /* Otro botón */
+        
+        input[type="radio" i] {
+            -webkit-appearance: radio;
+            background-color: initial;
+            border: initial;
+            box-sizing: border-box;
+            cursor: default;
+            margin: 3px 0.5ex;
+            padding: initial;
+        }
+    </style>
+    <!--  -->
+</head>
+<!-- head -->
+<!-- Cuerpo y estructura de página -->
+
+<body>
+    <!-- Formulario -->
+    <form name="registro" action="postulacion.html" method="post">
+        <!-- Imagén principal -->
+        <header>
+            <a href="inicio.html"><img src="Empresa/tab2.jpg" alt="Tiro al blanco"></a>
+        </header>
+        <!-- Registro de datos -->
+        <!-- Se tomará en cuenta el momento de registro de usuario -->
+        <!-- Datos de usuario -->
+        <!-- Confirmación de registro de cuenta vía Outlook -->
+        <!--  -->
+        <caption>
+            <h2>Registro de cuenta<span class="text-danger">*</span></h2>
+        </caption>
+        <table>
+            Fecha y hora: <input type="datetime-local" name="fechahora">
+            <b>Usuario<span class="text-danger">*</span></b>
+            <input type="text" name="username" id="username">
+            <b>Correo electronico<span class="text-danger">*</span></b>
+            <input type="email" name="email" id="email"><br>
+            <b>Contrasena nueva<span class="text-danger">*</span></b>
+            <input type="password" name="password" id="password">
+            <b>Telefono<span class="text-danger">*</span></b>
+            <input type="tel" name="tel" id="tel">
+            <b>DD/MM/AA<span class="text-danger">*</span></b>
+            <input type="date" name="fdn" id="fdn"><br>
+            <b>Genero<span class="text-danger">*</span>
+                Hombre 
+            <input type="radio" name="hm" id="hm" value="h" required>
+                Mujer
+                <input type="radio" name="hm" id="hm" value="m">
+            </b>
+        </table>
+        <br></br>
+        <hr>
+        <!-- Segunda tabla -->
+        <!-- Datos principales -->
+        <caption>
+            <h2>Crear perfil de cuenta<span class="text-danger">*</span></h2>
+        </caption>
+        <table>
+            <b>Nombre (s)<span class="text-danger">*</span></b>
+            <input type="text" name="name" id="name">
+            <b>Apellido paterno<span class="text-danger">*</span></b>
+            <input type="text" name="lastname" id="lastname">
+            <b>Apellido materno<span class="text-danger">*</span></b>
+            <input type="text" name="finame" id="finame"><br>
+            <b>Edad<span class="text-danger">*</span></b>
+            <input type="number" name="age" id="age">
+            <b>Domicilio<span class="text-danger">*</span></b>
+            <input type="text" name="address" id="address">
+            <b>Colonia<span class="text-danger">*</span></b>
+            <input type="text" name="suburb" id="suburb"><br>
+            <b>Codigo postal<span class="text-danger">*</span></b>
+            <input type="number" name="code" id="code">
+            <b>Ciudad y Estado<span class="text-danger">*</span></b>
+            <input type="text" name="citystate" id="citystate">
+            <b>Nacionalidad<span class="text-danger">*</span>
+            <input type="text" name="nationality" id="nationality"></br>
+            <b>Lugar de nacimiento<span class="text-danger">*</span></b>
+            <input type="text" name="place" id="place">
+        </table>
+        <br></br>
+        <hr>
+        <!-- Tercera tabla -->
+        <!-- Datos importantes -->
+        <!-- Seguridad de usuario importante -->
+        <caption>
+            <h2>Datos personales <span class="text-danger">*</span></h2>
+        </caption>
+        <table>
+            <b>Curp<span class="text-danger">*</span></b>
+            <input type="text" name="curp" id="curp">
+            <b>RFC<span class="text-danger">*</span> </b>
+            <input type="text" name="rfc" id="rfc">
+            <b>No. Seguro<span class="text-danger">*</span></b>
+            <input type="number" name="nss" id="nss"><br>
+            <b>Cartilla militar<span class="text-danger">*</span></b>
+            <input type="text" name="cartilla" id="cartilla">
+            <b>Licencia de manejo<span class="text-danger">*</span></b>
+            <input type="text" name="driving" id="driving">
+            <b>Pasaporte<span class="text-danger">*</span></b>
+            <input type="text" name="passport" id="passport">
+            <br>
+            </br>
+            <input class="bottom" type="submit" value="Postularme" onclick="valida_informacion();">
+            <p><a href="#">Terminos y condiciones</a></p>
+        </table>
+        <!-- Final de tabla -->
+    </form>
+    <!-- Final de formulario -->
+</body>
+
+</html>

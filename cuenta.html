@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- Español -->
+<html lang="es">
+<!-- Cabecera de página -->
+
+<head>
+    <meta charset="uft-8">
+    <title id="title"></title>
+    <!-- Título de página -->
+    <meta name="author" content="AlanGetMac22">
+    <meta name="description" content="Agencia de trabajos en línea">
+    <meta name="keywords" content="Tab, Tiro al blanco, ¡El blanco perfecto!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cuenta.css">
+    <!-- Estilos CSS3 -->
+</head>
+<!-- Contenido y estructura de página -->
+
+<body>
+    <!-- Hyperenlaces -->
+    <ul>
+        <li>
+            <a href="inicio.html" id="a1"></a>
+            <!-- Página principal -->
+        </li>
+        <li>
+            <a href="cuenta.html" class="active" id="a2"></a>
+            <!-- Perfil de cuenta -->
+        </li>
+        <li>
+            <a href="trabajos.html" id="a3"></a>
+            <!-- Bolsa de trabajos -->
+        </li>
+        <li>
+            <a href="postulacion.html" id="a4"></a>
+            <!-- Postulaciónes -->
+        </li>
+        <li>
+            <a href="contratacion.html" id="a5"></a>
+            <!-- Contrataciónes -->
+        </li>
+    </ul>
+    <!-- Imagen principal -->
+    <a href="inicio.html"><img src="Empresa/tab2.jpg" alt="Tiro al blanco"></a>
+    <!-- Tabla de registro de datos de usuario -->
+    <table>
+        <h1 id="e1"></h1>
+        <hr>
+        <input type="image" value="Imagen">
+        <hr>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <b>Nombre (s)<span class="text-danger">*</span></b>
+        <input type="text" name="name" id="name">
+        <b>Apellido paterno<span class="text-danger">*</span></b>
+        <input type="text" name="lastname" id="lastname">
+        <b>Apellido materno<span class="text-danger ">*</span></b>
+        <input type="text" name="finame" id="finame"><br>
+        <b>Edad<span class="text-danger">*</span></b>
+        <input type="number" name="age" id="age">
+        <b>Domicilio<span class="text-danger">*</span></b>
+        <input type="text" name="address" id="address">
+        <b>Colonia<span class="text-danger">*</span></b>
+        <input type="text" name="suburb" id="suburb">
+        <b>Codigo postal<span class="text-danger">*</span></b>
+        <input type="number" name="code" id="code">
+        <b>Ciudad y Estado<span class="text-danger">*</span></b>
+        <input type="text" name="citystate" id="citystate">
+        <b>Lugar de nacimiento<span class="text-danger">*</span></b>
+        <input type="text" name="place" id="place">
+        <b>Nacionalidad<span class="text-danger ">*</span></b>
+        <input type="text" name="nationality" id="nationality">
+    </table>
+    <br>
+    </br>
+    <hr>
+    <!-- Segunda tabla de datos de usuario -->
+    <table>
+        <h1 id="e2"></h1>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <b>Curp<span class="text-danger">*</span></b>
+        <input type="text" name="curp" id="curp">
+        <b>RFC<span class="text-danger">*</span></b>
+        <input type="text" name="rfc" id="rfc">
+        <b>No. Seguro<span class="text-danger ">*</span></b>
+        <input type="number" name="nss" id="nss">
+        <b>Cartilla militar<span class="text-danger ">*</span></b>
+        <input type="text" name="cartilla" id="cartilla">
+        <b>Licencia de manejo<span class="text-danger">*</span></b>
+        <input type="text" name="driving" id="driving">
+        <b>Pasaporte<span class="text-danger">*</span></b>
+        <input type="text" name="passport" id="passport">
+        <!--  -->
+        <br>
+        </br>
+
+    </table>
+    <button type="submit" class="button" id="button">Aceptar y Guardar</button>
+    </form>
+    </div>
+    <!-- Javascript -->
+    <script>
+        var s = "Titulo de la página";
+
+        var tab = document.getElementById("title").innerHTML = "Perfil | Tab";
+
+        console.log("Perfil de cuenta");
+
+        var a = 1000;
+        var b = 500;
+        var c = a + b;
+
+        var x = 100;
+        var y = 50;
+        var z = x + y;
+
+        console.log("Mis variables");
+
+        var s = "Enlaces de navegación";
+
+        var principal = document.getElementById("a1").innerHTML = "Pagina principal";
+        var perfil = document.getElementById("a2").innerHTML = "Perfil de cuenta";
+        var bolsa = document.getElementById("a3").innerHTML = "Bolsa de trabajos";
+        var postulaciones = document.getElementById("a4").innerHTML = "Postulaciones";
+        var contrataciones = document.getElementById("a5").innerHTML = "Contrataciones";
+
+        console.log("Hyperenlaces");
+
+        var s = "Curriculum";
+
+        document.getElementById("e1").innerHTML = "-Perfil de cuenta";
+        document.getElementById("e2").innerHTML = "-Datos personales";
+        document.getElementById("div").innerHTML = "Foto de perfil";
+
+        console.log("Perfil de cuenta");
+
+        var s = "Curriculum";
+
+        var name = document.getElementsById("name").hover;
+        var lastname = document.getElementsById("lastname").hover;
+        var finame = document.getElementsById("finame").hover;
+        var place = document.getElementsById("place").hover;
+        var age = document.getElementsByid("age").hover;
+        var address = document.getElementsById("address").hover;
+        var suburb = document.getElementsById("suburb").hover;
+        var code = document.getElementsById("code").hover;
+        var citystate = document.getElementsById("citystate").hover;
+        var national = document.getElementsById("national").hover;
+        var curp = document.getElementsById("curp").hover;
+        var rfc = document.getElementsById("rfc").hover;
+        var nss = document.getElementsById("nss").hover;
+        var cartilla = document.getElementsById("cartilla").hover;
+        var driving = document.getElementsById("driving").hover;
+        var passport = document.getElementById("passport").hover;
+
+        formulario.setAttribute("metod", "POST");
+        formulario.setAttribute("action", "http://google.com");
+        formulario.submit(onclick = "button");
+
+        console.log("Datos de usuario");
+
+        var s = "innerHTML";
+
+        document.getElementById("button").innerHTML = "Aceptar y Guardar";
+
+        console.log("Guardar");
+    </script>
+</body>
+<!-- Término de documento -->
+
+</html>

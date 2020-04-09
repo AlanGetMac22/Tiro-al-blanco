@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- Español -->
+<html lang="es">
+<!-- Cabecera de página -->
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AlanGetMac22">
+    <meta name="description" content="Agencia de trabajos en línea">
+    <meta name="keywords" content="Tab, Tiro al blanco, ¡El blanco perfecto!">
+    <!-- Titulo de la página -->
+    <title id="title"></title>
+    <!-- Estilos CSS3 -->
+    <link rel="stylesheet" href="acerca.css">
+    <!-- Dirección de icono -->
+    <script defer src="http://fontawesome.com/icons/react?style=brands"></script>
+</head>
+<!-- Estructura de página -->
+
+<body>
+    <!-- Enlaces de navegación -->
+    <nav>
+        <ul>
+            <li>
+                <a href="acerca.html" id="a"></a>
+                <!-- Acerca de -->
+            </li>
+            <li>
+                <a href="bolsa.html" id="a2"></a>
+                <!-- Bolsa de trabajos -->
+            </li>
+            <li>
+                <a href="postulaciones.html" id="a3"></a>
+                <!-- Postulaciónes -->
+            </li>
+            <li>
+                <a href="contrataciones.html" id="a4"></a>
+                <!-- Contrataciónes -->
+            </li>
+            <li>
+                <a href="iniciarsesion1.php" id="a5"></a>
+                <!-- Iniciar sesión -->
+            </li>
+        </ul>
+        <!-- Contenido principal -->
+        <div class="txtprl">
+            <h1 id="h1"></h1>
+            <!-- Titulo -->
+            <p id="p1"></p>
+            <!-- Párrafo -->
+            <p id="p2"></p>
+        </div>
+    </nav>
+    <!-- Selector de búsqueda -->
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Puesto solicitado">
+        <input class="search-txt" type="text" name="" placeholder="Ciudad o Estado">
+        <a class="search-btn" href="trabajos.html">
+            <!-- Botón de búsqueda -->
+            <i class="fab fa-react"></i>
+        </a>
+    </div>
+    <!-- Imagen principal Tab -->
+    <header>
+        <a href="principal.html"><img src="Empresa/tab2.jpg" alt="Tiro al blanco"></a>
+    </header>
+    <br>
+    <!-- Mycanvas -->
+    <canvas id="myCanvas" width="800" height="100" style="border:2px solid violet;"></canvas>
+    <!-- Articulos relacionados con Tiro al blanco -->
+    <article>
+        <!-- Acerca de nosotros -->
+        <div class="contenedor">
+            <img src="Empresa/Apreton.jpeg">
+            <h3 id="etiqueta1"></h3>
+            <p id="parrafo1"></p>
+        </div>
+        <hr>
+        <div class="contenedor">
+            <img src="Empresa/proyec.jpeg">
+            <h3 id="etiqueta2"></h3>
+            <p id="parrafo2"></p>
+            <!-- Misión y Visión -->
+        </div>
+        <hr>
+        <div class="contenedor">
+            <img src="Empresa/woo.jpeg">
+            <h3 id="etiqueta3"></h3>
+            <p id="parrafo3"></p>
+            <!-- Objetivo de la organización -->
+        </div>
+        <hr>
+        <div class="contenedor">
+            <img src="Empresa/chidee.jpeg">
+            <h3 id="etiqueta4"></h3>
+            <p id="parrafo4"></p>
+            <!-- Ventajas del sitio web -->
+        </div>
+        <hr>
+        <div class="contenedor">
+            <img src="Empresa/emprender.jpeg">
+            <h3 id="etiqueta5"></h3>
+            <p id="parrafo5"></p>
+            <!-- Tiroalblanco.org -->
+        </div>
+    </article>
+    <!--  -->
+    <hr>
+    <br>
+    <!-- Area de comentarios -->
+    <textarea id="textarea"></textarea>
+    <input type="submit" value="Enviar">
+    <!-- Pie de página -->
+    <footer>
+        <p id="footer"></p>
+    </footer>
+    <!-- Javascript -->
+    <script>
+        var s = "Titulo de la página";
+
+        var tab = document.getElementById("title").innerHTML = "Acerca de | Tiro al blanco";
+
+        console.log("Acerca de nosotros");
+
+        var s = "Mis variables";
+
+        var a = 1000;
+        var b = 500;
+        var c = a + b;
+
+        console.log("Variable var barecito");
+
+        var s = "Enlaces de navegación";
+
+        var acerca = document.getElementById("a").innerHTML = "Acerca de";
+        var bolsa = document.getElementById("a2").innerHTML = "Bolsas en línea";
+        var postulaciones = document.getElementById("a3").innerHTML = "Postulaciónes";
+        var contrataciones = document.getElementById("a4").innerHTML = "Contrataciónes";
+        var inicio = document.getElementById("a5").innerHTML = "Iniciar sesión";
+
+        console.log("Hypervinculos");
+
+        var s = "Contenido principal";
+
+        var tab = document.getElementById("h1").innerHTML = "Agencia de trabajos en línea";
+        document.getElementById("p1").innerHTML = "Te presentamos una nueva forma de obtener un empleo ó trabajo más fácil y más rápido. ";
+        document.getElementById("p2").innerHTML = "También tenemos vacantes y puestos disponibles cerca de ti. ¡Descubrelo!. ";
+
+        console.log("Contenido principal");
+
+
+        var s = "Parrafos de secciones";
+
+        document.getElementById("etiqueta1").innerHTML = "-Acerca de nosotros.";
+        document.getElementById("parrafo1").innerHTML = "Somos un sitio web , dedicado para aquellas personas que buscan un empleo o trabajo nuevo en línea , a través del espacio de búsqueda , encontrarás miles de vacantes y ofertas de trabajo disponibles , el usuario tendra que registrarse rellenando sus datos en el formulario y enviar su postulación , es gratis y sencillo solo siguiendo los pasos correspondientes y así obtener<br>¡El blanco perfecto!.";
+
+        document.getElementById("etiqueta2").innerHTML = "-Misión y Visión.";
+        document.getElementById("parrafo2").innerHTML = "Hacer posible la obtención de empleo o trabajo , por medio de la postulación en linea , aquí mismo en la web , se busca reducir los tiempos , viajes e inversiones que se requieren para ir en busca de un empleo o llevar una solicitud , en Tiro al blanco , se busca que las personas opten por formular un currículum con los datos solicitados y puedan enviar sus postulaciones en línea y asi dejar a un lado la solicitud de empleo convencional.";
+
+        document.getElementById("etiqueta3").innerHTML = "-Objetivo de la organización.";
+        document.getElementById("parrafo3").innerHTML = "Conseguir que los usuarios asociados con el sitio web obtengan de una manera más fácil y rápida un trabajo o empleo estable desde la comodidad de su hogar , registrando y formulando su currículum con los datos correspondientes para poder enviar su solicitud y recibir respuesta rápida de empresas o contratistas en un tiempo menor posible.";
+
+        document.getElementById("etiqueta4").innerHTML = "-Ventajas.";
+        document.getElementById("parrafo4").innerHTML = "Con la creación de una bolsa de trabajos variada e inclusiva , buscará activar las economías de las principales regiones importantes del país , promoviendo el desarrollo de los jóvenes y adultos que deseen obtener un empleo , promoviendo las nuevas tecnologías que tenemos hoy en día , además de contribuir directamente al cuidado del medio ambiente , principalmente dejando de lado la solicitud de empleo y agilizando la forma en la que vivimos cotidianamente.";
+
+        document.getElementById("etiqueta5").innerHTML = "-Tiroalblanco.org Conoce nuestro sitio web!.";
+        document.getElementById("parrafo5").innerHTML = "Visita y regístrate en el sitio web , aquí encontrarás vacantes y trabajos a través de nuestras bolsas de trabajo , ya sea en tu dispositivo móvil o computadora , formula un CV sencillo y práctico , la aplicación en línea es gratuita. nosotros cumplimos el resto , Tiro al blanco , ¡El blanco perfecto!.";
+
+        console.log("Contenido de sección");
+
+        var s = "Comentarios";
+
+        document.getElementById("textarea").innerHTML = "Nos interesa tus comentarios (0)";
+
+        console.log("Comentarios");
+
+        var s = "Pie de página";
+
+        document.getElementById("footer").innerHTML = "Derechos reservados.";
+
+        console.log("Así nomás 8)");
+
+        var s = "Mycanvas";
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        console.log("Mycanvas");
+    </script>
+</body>
+<!-- Término de documento -->
+
+</html>

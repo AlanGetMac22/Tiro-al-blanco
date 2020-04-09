@@ -1,0 +1,83 @@
+/* Cuerpo de página web */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: palegreen;
+    font-family: 'Franklin Gothic Medium';
+    box-sizing: border-box;
+}
+
+
+/* Formulario de cajas */
+
+.box {
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: azure;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orangered;
+    padding: 10px 15px;
+    width: 200px;
+    outline: none;
+    color: gray;
+    border-radius: 30px;
+    transition: 0.25s;
+    font-size: 15px;
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus {
+    border-color: palegreen;
+    width: 280px;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid palegreen;
+    padding: 11px 11px;
+    outline: none;
+    color: gray;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 150px;
+}
+
+.box input[type="submit"]:hover {
+    background: palegreen;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* Decoración de texto */
+
+p a {
+    text-decoration: none;
+}
